@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors Example</title>
+  <style>
+    /* Element Selector */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 20px;
+    }
+
+    h1 {
+      color: darkblue;
+      text-align: center;
+    }
+
+    /* Class Selector */
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+    }
+
+    /* ID Selector */
+    #special {
+      color: green;
+      font-size: 20px;
+    }
+
+    /* Group Selector */
+    h2, p {
+      color: #333;
+    }
+
+    /* Descendant Selector */
+    div p {
+      color: purple;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Selectors Demo</h1>
+
+  <h2>About</h2>
+  <p>This is a simple paragraph styled using <span class="highlight">class selector</span>.</p>
+
+  <p id="special">This paragraph uses an ID selector.</p>
+
+  <div>
+    <h2>Inside a Div</h2>
+    <p>This paragraph is styled by a descendant selector (div p).</p>
+  </div>
+</body>
+</html>
