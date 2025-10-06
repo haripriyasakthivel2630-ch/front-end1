@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale=0.1">
+<title> css grid</title>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 10px;
+        background-color: aliceblue;
+    }
+    h2{
+        color: brown;
+        font-size: 3em;
+        text-align: center;
+    }
+    .grid-container{
+        display:grid;
+        grid-template-columns: 1fr  1fr 1fr;
+        grid-template-rows:auto ;
+        padding:1rem;
+        gap:20px;
+        background-color: aqua;
+        width: 50%;
+        border-radius: 25px;
+        margin-left: 25%;
+    }
+    .grid{
+        background-color: aliceblue;
+        color:black;
+        padding:2rem;
+        border-radius:20px;
+        text-align: center;
+        font-size:1.2rem;
+
+    }
+    .grid1{
+        display: grid;
+        grid-template-columns: 100px 1fr 1fr;
+        grid-template-rows: auto;
+        background-color: rgb(230, 176, 76);
+        border: 3px solid rgb(194, 74, 74);
+        margin: 30px;
+        padding: 30px;
+        width: 50%;
+        margin-left: 25%;
+
+    }
+    .one{
+        border: 3px solid rgb(146, 199, 21);
+        padding: 10px;
+        text-align: center;
+        color: rgb(251, 252, 252);
+        border-radius: 25px;
+        background-color: rgb(44, 136, 211);
+        margin: 10px;
+    }
+    .items8{
+        grid-row: span 2;
+        background-color: rgb(134, 35, 101);
+    }
+    
+</style>
+    </head>
+<body>
+    <h2><u>Css grid</u></h2>
+    <div class="grid-container">
+        <div class="grid items1">box1</div>
+        <div class="grid items2">box2</div>
+        <div class="grid items3">box3</div>    
+        <div class="grid items4">box4</div>
+        <div class="grid items5">box5</div>
+        <div class="grid items6">box6</div>
+    </div>
+    <h2><b>Grid</b></h2>
+    <div class="grid1">
+        <div class="one items7">1 </div>
+        <div class="one items8"> 2 <br>( row span)</div>
+        <div class="one items9">3</div>
+        <div class="one items10">4</div>
+        <div class="one items11">5</div>
+        <div class="one items12">6</div>
+        
+        
+    </div>
+    
+</body>
+    
+</html>
