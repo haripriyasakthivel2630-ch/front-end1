@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device=width,initial-scale=0.1">
+    <title>function javascript</title>
+</head> 
+<body>
+    <h2>function javascript example</h2>
+    <script>
+        function add(a,b){
+            return a+b;
+        }
+        console.log("Addiction:",add(5,3));
+        const multiply=function(a,b){
+            return a*b;
+        };
+        console.log("Multiplication:",multiply(4,2));
+        const subtract = (a,b)=>a-b;
+        console.log("Subtraction:", subtract(10, 6)); 
+        function divide(a, b) {
+      if (b === 0) {
+        return "Cannot divide by zero";
+      }
+      return a / b;
+    }
+    let result = divide(20, 5);
+    console.log("Division:", result); 
+    let globalVar = "I am global"; 
+
+    function scopeExample() {
+      let localVar = "I am local"; 
+      console.log(globalVar); 
+      console.log(localVar);  
+    }
+    scopeExample();
+
+    console.log(globalVar);
+
+    </script>
+</body>   
+</html>
