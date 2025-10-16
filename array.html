@@ -1,0 +1,27 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device=width,initial scale=0.1">
+    <title>Array javascript</title>
+</head>
+<body>
+    <h2>Array method</h2>
+    <script>
+        let fruits=["Apple","Banana","Orange"];
+        console.log("Original Array:",fruits);
+        fruits.push("Mango");
+        console.log("After push:",fruits);
+        fruits.pop();
+        console.log("After pop:",fruits);
+        fruits.shift();
+        console.log("After shift:",fruits);
+        fruits.unshift("Orange");
+        console.log("After Unshift:",fruits);
+        console.log("Printing all elements:");
+        for(let i=0;i<fruits.length;i++){
+            console.log(fruits[i]);
+        }
+    </script>
+</body>
+</html>
